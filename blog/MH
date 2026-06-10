@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> S-corp Owners's Reasonable Salary | Mint Hill CPA</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #1a202c;
+        }
+        h1 { font-size: 2.5rem; color: #1a202c; }
+        h3 { color: #2d3748; margin-top: 1.5rem; }
+        .header { border-bottom: 2px solid #c89b3c; padding-bottom: 2rem; }
+        .header a { color: #c89b3c; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="/">← Back to Home</a>
+        <h1>Your Blog Title</h1>
+        <div>Published January 29, 2025</div>
+    </div>
+    
+    <article>
+        <h3>First Section</h3>
+        <p>Your One of the biggest perks of running an S Corp is the ability to save significantly on employment taxes, but this benefit comes with a specific "toll": you must pay yourself a **"reasonable salary"**. While profit distributions are generally free from FICA (Social Security and Medicare) and FUTA taxes, any owner who actively works for the business is viewed by the IRS as an employee who must be compensated for their services. The sources explain that the primary reason the government enforces this rule is to ensure owners pay their fair share into the tax system rather than taking every dollar as a tax-free distribution.
+
+If you are looking for a specific dollar amount, you won't find one in the tax code; the sources note there is **no "bright-line" test** for what qualifies as reasonable. Instead, "reasonable" is determined by the specific facts and circumstances of your business. In many cases, courts use **industry statistical data** to estimate what a third party would be paid to do your same job. It is important to find a balanced number, as being too aggressive with a low salary can lead to IRS audits, while taking an excessively high salary could potentially lead to legal trouble with minority shareholders for "corporate waste."
+
+Beyond just staying in the good graces of the IRS, your salary level has major ripple effects on your long-term financial planning. For instance, the amount you can contribute to **qualified retirement plans** is usually limited to a percentage of your actual wages; if you skip your salary to save on taxes, you lose the ability to fund those plans for the year. Furthermore, when it comes to the **Qualified Business Income (QBI) deduction**, the law explicitly excludes "reasonable compensation" from the calculation. This means you cannot simply "skip" a salary to try and inflate your 20% deduction. If your business is still in its early stages and hasn't made a profit or paid any distributions yet, you generally don't need to worry about this requirement until the company is in the green. Once you are profitable, work with a professional to document how you chose your salary to ensure your S Corp remains a powerful and compliant tax-saving tool.</p>
+
+    </article>
+    
+    <footer style="margin-top: 3rem; text-align: center; color: #718096;">
+        <a href="/">← Back to Home</a>
+    </footer>
+</body>
+</html>
