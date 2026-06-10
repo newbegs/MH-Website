@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8">
+<title>Blog — Mint Hill CPA</title>
+<style>
+body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin:0;color:#222;
+  background-image:url('/A_website_homepage_for_MH_CPA_Firm_is_displayed_in.png');background-size:cover;background-attachment:fixed;background-position:center;background-repeat:no-repeat;}
+.wrap{max-width:900px;margin:40px auto;background:rgba(255,255,255,0.95);padding:20px;border-radius:8px}
+a{color:#123456;text-decoration:none} a:hover{text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{border:1px solid #ddd;border-radius:8px;padding:12px;background:#fff}
+.note{color:#666;font-size:.9em}
+nav{background:rgba(18,52,86,.85);color:#fff;padding:12px 20px}
+nav a{color:#fff;margin-right:12px}
+</style>
+<nav><a href="/">Home</a> <a href="/blog/">Blog</a></nav>
+<div class="wrap"><h1>Blog</h1><div id="posts" class="grid"></div></div>
+<script>
+fetch('/blog/index.json').then(r=>r.json()).then(ps=>{
+  const c=document.getElementById('posts');
+  ps.forEach(p=>{
+    const a=document.createElement('a'); a.href=p.url; a.className='card';
+    a.innerHTML = '<strong>'+p.title+'</strong><div class="note">'+p.excerpt+'</div><div class="note">'+p.date+'</div>';
+    c.appendChild(a);
+  });
+}).catch(()=>{});
+</script>

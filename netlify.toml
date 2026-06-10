@@ -1,0 +1,60 @@
+[build]
+  publish = "."
+
+# Your existing security headers (keep)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+    X-XSS-Protection = "0"
+
+# Your existing admin no-store (keep)
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
+# --- Add these for performance/caching ---
+
+# Long-term caching for assets you control
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# (Optional) If you keep images/scripts at the root as well, uncomment what you use:
+# [[headers]]
+#   for = "/*.png"
+#   [headers.values]
+#     Cache-Control = "public, max-age=31536000, immutable"
+# [[headers]]
+#   for = "/*.jpg"
+#   [headers.values]
+#     Cache-Control = "public, max-age=31536000, immutable"
+# [[headers]]
+#   for = "/*.webp"
+#   [headers.values]
+#     Cache-Control = "public, max-age=31536000, immutable"
+# [[headers]]
+#   for = "/*.css"
+#   [headers.values]
+#     Cache-Control = "public, max-age=31536000, immutable"
+# [[headers]]
+#   for = "/*.js"
+#   [headers.values]
+#     Cache-Control = "public, max-age=31536000, immutable"
+
+# Canonical HTTPS redirects (optional but recommended)
+[[redirects]]
+  from = "http://minthillcpa.com/*"
+  to = "https://www.minthillcpa.com/:splat"
+  status = 301
+
+[[redirects]]
+  from = "http://www.minthillcpa.com/*"
+  to = "https://www.minthillcpa.com/:splat"
+  status = 301
+
